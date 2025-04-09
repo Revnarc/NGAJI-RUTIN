@@ -1,48 +1,63 @@
-# 🌙 Ngaji Rutin
+# Ngaji Rutin
 
-**Ngaji Rutin** adalah website dokumentasi momen kebersamaan dari sekumpulan teman sefrekuensi yang awalnya berasal dari kelas IPS 1 SMA Negeri 1 Kertosono. Web ini berfungsi sebagai galeri kenangan—tempat upload dan menampilkan foto-foto kumpul bareng dengan cara yang simpel, rapi, dan bisa diakses semua anggota.
+**Ngaji Rutin** adalah website dokumentasi momen kebersamaan dari sebuah grup pertemanan yang solid dan sefrekuensi. Website ini dirancang untuk menjadi ruang nostalgia digital—tempat kita menyimpan foto-foto kumpul, cerita, dan kenangan, tanpa harus ribet scroll galeri HP satu per satu.
 
-## 📸 Tentang Proyek
-
-Website ini dibuat untuk mengabadikan momen-momen penting yang sering kita foto saat kumpul, tapi biasanya cuma disimpan di HP masing-masing. Supaya lebih terorganisir, kita bikin sistem upload dan galeri online biar semua anggota bisa lihat, kapan pun dan di mana pun.
-
-> Grup ini berisi orang-orang good looking dengan frekuensi yang klop. Serius tapi santai, nggak ada pressure, cuma seru-seruan dan nostalgia bareng!
-
-## 🛠 Fitur Utama
-
-- Upload foto langsung dari web (dengan password)
-- Validasi nama file dengan format `dd-mm-yyyy`
-- Galeri otomatis menampilkan 25 foto terbaru
-- Pengelompokan foto berdasarkan tanggal upload
-- Modal upload elegan dengan password
-- Fitur "Inspect" foto (klik untuk lihat lebih besar)
-- Scroll halus dan tombol "Kembali ke Atas"
-- Tampilan galeri full bisa diakses melalui Google Drive
-- Minimal 3 orang dalam foto agar bisa diupload ✔️
-
-## 🔗 Link Galeri Lengkap
-
-👉 [Lihat semua foto di Google Drive](https://drive.google.com/drive/folders/1h-UlOX02EPajZYtOICeZg5Gi1MxPyh0L?dmr=1&ec=wgc-drive-hero-goto)
-
-## 🧠 Teknologi yang Digunakan
-
-- **Frontend**: HTML, CSS (custom + Tailwind), JavaScript
-- **Backend**: Google Apps Script (untuk integrasi upload langsung ke Google Drive)
-- **Storage**: Google Drive (terhubung otomatis tanpa menampilkan UI Google Drive)
-
-## 📅 Timeline Singkat
-
-- 💡 Ide pertama muncul: 27 Agustus 2024
-- 🛑 Sempat mangkrak...
-- 🚀 Web selesai dan aktif: 10 April 2025
-
-## 📌 Catatan
-
-- Upload hanya valid jika dalam foto terdapat minimal 3 orang.
-- Nama file harus sesuai format `dd-mm-yyyy` saat diupload.
-- Web ini dibangun bukan untuk publik, melainkan dokumentasi internal geng Ngaji Rutin.
+> Dibangun dengan niat sederhana: menjaga cerita tetap hidup, lewat visual.
 
 ---
 
-> "Ngaji Rutin" bukan cuma tentang kumpul, tapi tentang menjaga koneksi, tawa, dan cerita yang udah terbentuk dari masa SMA hingga sekarang.
+## ✨ Fitur Utama
+
+- 📤 **Upload Foto Langsung dari Website**  
+  Cukup isi tanggal, masukkan password, dan unggah fotomu. Simpel dan cepat.
+
+- 🗓️ **Pengelompokan Otomatis Berdasarkan Tanggal Upload**  
+  Galeri dibagi per hari, dengan urutan terbaru di atas. Rapi dan mudah dinikmati.
+
+- 🔍 **Preview Foto dalam Modal**  
+  Klik foto untuk melihat lebih besar, tanpa buka tab baru.
+
+- 📦 **Terintegrasi dengan Google Drive**  
+  Foto langsung tersimpan di Google Drive tanpa user melihat antarmuka Drive-nya.
+
+- ⚠️ **Validasi Upload**  
+  Upload hanya valid jika terdapat minimal **3 orang dalam foto**, dan nama file wajib dalam format `dd-mm-yyyy`.
+
+- 🧭 **Smooth Scroll + Scroll to Top**  
+  Navigasi halaman jadi lebih nyaman dan intuitif.
+
+---
+
+## 🚧 Latar Belakang
+
+Website ini lahir dari kebiasaan kecil: setiap kumpul bareng, pasti ada sesi foto. Tapi lama-kelamaan muncul satu pertanyaan:  
+**“Kenapa nggak sekalian aja dikumpulin di satu tempat khusus?”**
+
+Pada tanggal **27 Agustus 2024**, ide membuat web ini muncul. Konsep awalnya: web gratisan, simple, dan bisa upload foto dengan tampilan galeri. Tapi setelah perencanaan selesai... proyek sempat terhenti cukup lama. Sampai akhirnya, pada **10 April 2025**, website ini resmi live dan bisa digunakan.
+
+---
+
+## 🧱 Stack Teknologi
+
+- **Frontend**: HTML, Tailwind CSS, JavaScript
+- **Backend**: Google Apps Script (untuk handle upload ke Google Drive)
+- **Storage**: Google Drive (private, otomatis tersinkron)
+
+---
+
+## 💡 Filosofi
+
+Ngaji Rutin bukan tentang kajian atau ceramah. Ini tentang teman-teman yang punya frekuensi yang sama, ngobrol random, main Uno, dan ketawa bareng. Website ini bukan cuma dokumentasi foto, tapi arsip perjalanan pertemanan yang nggak tergantikan.
+
+---
+
+## 📌 Catatan Akhir
+
+- Project ini bukan open platform publik—hanya untuk internal komunitas.
+- Semua anggota bebas lihat isi galeri kapan pun.
+- Foto tetap disimpan meskipun hanya sebagian anggota yang hadir saat kumpul.
+
+---
+
+> _“Karena momen itu nggak akan terulang. Tapi bisa disimpan.”_
 
