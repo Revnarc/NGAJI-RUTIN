@@ -1,88 +1,48 @@
-🕌 Ngaji Rutin
-Ngaji Rutin adalah website dokumentasi momen-momen berkumpul dalam rangka kegiatan ngaji bersama. Website ini menampilkan galeri foto dan video yang tersimpan langsung di Google Drive, serta menyediakan fitur unggah foto dengan sistem keamanan password. Dirancang dengan gaya visual unik perpaduan antara pop punk dan old money, menjadikan tampilannya modern, berani, dan klasik dalam satu nuansa.
+# 🌙 Ngaji Rutin
 
-🎯 Fitur Utama
-Galeri Dinamis
-Foto ditampilkan berdasarkan tanggal upload dan dikelompokkan per hari. Tanggal terbaru tampil di bagian atas.
+**Ngaji Rutin** adalah website dokumentasi momen kebersamaan dari sekumpulan teman sefrekuensi yang awalnya berasal dari kelas IPS 1 SMA Negeri 1 Kertosono. Web ini berfungsi sebagai galeri kenangan—tempat upload dan menampilkan foto-foto kumpul bareng dengan cara yang simpel, rapi, dan bisa diakses semua anggota.
 
-Integrasi Google Drive
-Semua media tersimpan langsung di Google Drive. Tidak ada file yang disimpan di server hosting.
+## 📸 Tentang Proyek
 
-Upload Foto dengan Validasi
-Pengunjung bisa mengunggah foto melalui modal khusus, dengan pengisian nama file (format tanggal dd/mm/yyyy) dan password untuk validasi.
+Website ini dibuat untuk mengabadikan momen-momen penting yang sering kita foto saat kumpul, tapi biasanya cuma disimpan di HP masing-masing. Supaya lebih terorganisir, kita bikin sistem upload dan galeri online biar semua anggota bisa lihat, kapan pun dan di mana pun.
 
-Batasan Tampilan
-Hanya 25 foto terbaru yang ditampilkan untuk menjaga performa. Foto lama tetap tersimpan di Google Drive.
+> Grup ini berisi orang-orang good looking dengan frekuensi yang klop. Serius tapi santai, nggak ada pressure, cuma seru-seruan dan nostalgia bareng!
 
-Fitur Inspect Foto
-Klik pada foto untuk melihat versi besar dalam modal, lengkap dengan tombol close yang responsif.
+## 🛠 Fitur Utama
 
-Tampilan Elegan & Dinamis
+- Upload foto langsung dari web (dengan password)
+- Validasi nama file dengan format `dd-mm-yyyy`
+- Galeri otomatis menampilkan 25 foto terbaru
+- Pengelompokan foto berdasarkan tanggal upload
+- Modal upload elegan dengan password
+- Fitur "Inspect" foto (klik untuk lihat lebih besar)
+- Scroll halus dan tombol "Kembali ke Atas"
+- Tampilan galeri full bisa diakses melalui Google Drive
+- Minimal 3 orang dalam foto agar bisa diupload ✔️
 
-Efek hover dengan zoom dan shadow
+## 🔗 Link Galeri Lengkap
 
-Scroll smooth
+👉 [Lihat semua foto di Google Drive](https://drive.google.com/drive/folders/1h-UlOX02EPajZYtOICeZg5Gi1MxPyh0L?dmr=1&ec=wgc-drive-hero-goto)
 
-Tombol “Kembali ke Atas” yang stylish
+## 🧠 Teknologi yang Digunakan
 
-🧩 Teknologi yang Digunakan
-Frontend: HTML5, CSS3, JavaScript (Vanilla)
+- **Frontend**: HTML, CSS (custom + Tailwind), JavaScript
+- **Backend**: Google Apps Script (untuk integrasi upload langsung ke Google Drive)
+- **Storage**: Google Drive (terhubung otomatis tanpa menampilkan UI Google Drive)
 
-Desain: Gaya gabungan Pop Punk x Old Money
+## 📅 Timeline Singkat
 
-Storage: Google Drive (melalui Google Apps Script API)
+- 💡 Ide pertama muncul: 27 Agustus 2024
+- 🛑 Sempat mangkrak...
+- 🚀 Web selesai dan aktif: 10 April 2025
 
-Integrasi Backend: Google Apps Script (untuk handling upload)
+## 📌 Catatan
 
-🚀 Cara Deploy & Setup
-Clone Repo
+- Upload hanya valid jika dalam foto terdapat minimal 3 orang.
+- Nama file harus sesuai format `dd-mm-yyyy` saat diupload.
+- Web ini dibangun bukan untuk publik, melainkan dokumentasi internal geng Ngaji Rutin.
 
-bash
-Copy
-Edit
-git clone https://github.com/username/ngaji-rutin.git
-cd ngaji-rutin
-Hosting
-Unggah file ke hosting pilihan (Rekomendasi: Netlify, Vercel, atau shared hosting).
+---
 
-Google Drive Setup
+> "Ngaji Rutin" bukan cuma tentang kumpul, tapi tentang menjaga koneksi, tawa, dan cerita yang udah terbentuk dari masa SMA hingga sekarang.
 
-Buat folder di Google Drive untuk menyimpan foto.
-
-Gunakan Google Apps Script untuk meng-handle upload file ke Drive dan generate ID/link-nya.
-
-Pastikan Script memiliki izin publik atau hanya bisa diakses dengan password yang sudah diatur.
-
-Konfigurasi
-
-Edit file JavaScript NR 1.js untuk menyesuaikan folder ID Google Drive dan endpoint upload Apps Script.
-
-Edit NR 1.css jika ingin menyesuaikan tema atau tampilan.
-
-📁 Struktur Folder
-bash
-Copy
-Edit
-ngaji-rutin/
-│
-├── index.html
-├── NR 1.css              # Styling utama
-├── NR 1.js               # JavaScript interaktif
-├── assets/               # Ikon, gambar latar, dll
-└── README.md
-🔒 Keamanan Upload
-Password wajib diisi saat mengunggah foto.
-
-Nama file harus mengikuti format tanggal dd/mm/yyyy, jika tidak upload akan ditolak.
-
-Upload hanya bisa dilakukan lewat modal interaktif, bukan melalui Google Drive langsung.
-
-🤝 Kontribusi
-Kami terbuka untuk kontribusi dari tim atau komunitas. Silakan fork repo ini dan ajukan pull request untuk fitur atau perbaikan baru.
-
-📸 Preview Tampilan
-Tambahkan screenshot website di sini jika diunggah di GitHub.
-
-👨‍💻 Developer
-Website ini dikembangkan oleh teman-teman komunitas Ngaji Rutin dengan semangat kebersamaan dan kenangan baik.
-Desain dan pengembangan oleh [Developer Utama].
