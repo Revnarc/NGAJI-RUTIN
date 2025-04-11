@@ -318,3 +318,42 @@ function displayPhotosByDate(photos) {
         photoContainer.appendChild(photoGroup);
     });
 }
+
+function fetchPhotosFromDrive() {
+    // Show loading indicator with styled animation
+    const photoContainer = document.getElementById('photoContainer');
+    photoContainer.innerHTML = `
+        <div class="loading-container">
+            <div class="loading-text">LOADING PHOTOS</div>
+            <div class="loading-dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    `;
+    
+    // Use your Google Apps Script web app URL
+    fetch('https://script.google.com/macros/s/AKfycbzXPyM-oSLraTI-bHr8_Jg7vTwaqXWAdXyAVyua3BFEH1aWzkXYzRs1AL8-K1s2NN3vUA/exec')
+        .then(res => {
+            if (!res.ok) {
+                throw new Error('Network response was not ok: ' + res.status);
+            }
+            return res.json();
+        })
+        .then(data => {
+            console.log("Data received:", data); // Debug log
+            if (Array.isArray(data) && data.length > 0) {
+                displayPhotosByDate(data);
+            } else {
+                photoContainer.innerHTML = '<div class="no-photos-message">No photos found. Upload some!</div>';
+            }
+        })
+        .catch(error => {
+            console.error('Error fetching photos:', error);
+            photoContainer.innerHTML = `<div class="error-message">
+                Error loading photos: ${error.message}<br>
+                Please try refreshing the page.
+            </div>`;
+        });
+}
